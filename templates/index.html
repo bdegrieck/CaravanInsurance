@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSI 5810 Caravan Insurance Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSI 5810 Caravan Insurance Project</h1>
+    <p>Select a model you want to analyze the data on</p>
+
+    <div class="button-container">
+        <button onclick="selectModel('KNN')">KNN</button>
+        <button onclick="selectModel('Random Forest')">Random Forest</button>
+    </div>
+
+    <script>
+        function selectModel(model) {
+            if (model === 'KNN') {
+                window.location.href = '/knn';
+            } else if (model === 'Random Forest') {
+                window.location.href = '/rf';
+            }
+        }
+    </script>
+
+</body>
+</html>
